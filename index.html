@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Async Keyword</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="world-wide">
+				<h1 class="main-title">
+					covid 19 statistics (LIVE) <span class="live"></span>
+				</h1>
+				<div class="statistics">
+					<div class="total">
+						<h2>total: <span id="total">0</span></h2>
+					</div>
+					<div class="active">
+						<h2>active: <span id="active">0</span></h2>
+					</div>
+					<div class="recovered">
+						<h2>recovered: <span id="recovered">0</span></h2>
+					</div>
+					<div class="deaths">
+						<h2>deaths: <span id="deaths">0</span></h2>
+					</div>
+					<div class="critical">
+						<h2>critical: <span id="critical">0</span></h2>
+					</div>
+					<div class="today-deaths">
+						<h2>today-deaths: <span id="today-deaths">0</span></h2>
+					</div>
+					<div class="today-cases">
+						<h2>today-cases: <span id="today-cases">0</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="countries"></div>
+		</div>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>

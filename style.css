@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	padding: 2rem;
+}
+
+.world-wide {
+	/* background-color: #f80; */
+	width: 100%;
+	padding: 5px;
+}
+.wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+.main-title {
+	text-align: center;
+	margin: auto;
+	text-transform: capitalize;
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	position: relative;
+	width: fit-content;
+}
+
+.live {
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	background-color: darkgreen;
+	border-radius: 100%;
+	top: 50%;
+	left: 103%;
+	transform: translateY(-50%);
+}
+.live::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: inherit;
+	position: absolute;
+	left: 0;
+	top: 0;
+  border-radius: 50%;
+  animation: live 1s ease-in-out infinite;
+}
+@keyframes live {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+
+h2 {
+	font-weight: normal;
+}
+.statistics {
+	/* background-color: #f08; */
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.statistics > div {
+	/* border: 1px solid #f08; */
+	background-color: #f4f4f4;
+	padding: 1rem;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
+}
+.statistics > div span {
+	font-weight: bolder;
+	color: #272727;
+}
+.statistics .total {
+	flex-basis: 100%;
+}
+.statistics .active {
+	flex-basis: 100%;
+}
+.statistics .recovered {
+	flex-basis: 49%;
+	margin-right: 2%;
+}
+.statistics .deaths {
+	flex-basis: 49%;
+}
+.statistics .critical {
+	flex: 1;
+	margin-right: 1%;
+}
+.statistics .today-deaths {
+	flex: 1;
+	margin-right: 1%;
+}
+.statistics .today-cases {
+	flex: 1;
+}
+.statistics .deaths span {
+	color: firebrick;
+}
+.statistics .recovered span {
+	color: darkgreen;
+}
