@@ -46,8 +46,8 @@ body {
 	position: absolute;
 	left: 0;
 	top: 0;
-  border-radius: 50%;
-  animation: live 1s ease-in-out infinite;
+	border-radius: 50%;
+	animation: live 1s ease-in-out infinite;
 }
 @keyframes live {
 	0% {
@@ -111,4 +111,56 @@ h2 {
 }
 .statistics .recovered span {
 	color: darkgreen;
+}
+
+.country {
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	background-color: #f4f4f4;
+	margin-bottom: 15px;
+}
+.country h3 {
+	flex: 1;
+	margin-left: 10px;
+}
+.country ul {
+	list-style: none;
+}
+.country ul li {
+	display: inline-block;
+	padding: 15px;
+}
+
+.search-box {
+	margin: 2rem auto;
+	padding: 10px;
+	display: flex;justify-content: center;
+	align-items: center;
+	width: 100%;	
+	background-color: #f4f4f4;
+	/* background-color: #f80; */
+
+}
+#search {
+	flex: 1;
+	padding: 10px 15px;
+	border: 0;
+	border-radius: 5px;
+	font-size: 18px;
+	outline: 0;
+	/* background-color:  */
+}
+
+.search-btn {
+	outline: 0;
+	padding: 10px 15px;
+	background-color: #b6b6b6;
+	font-size: 18px;
+	border: 0;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.search-btn:active {
+	background-color: #bfbfbf;
 }
